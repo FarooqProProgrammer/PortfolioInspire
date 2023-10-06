@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 import  { ColorContext } from '../../Hooks/useTheme'
+import LazyLoad from '../../Common/LazyLoad';
+
 
 export default function About() {
     const { colorValue } = useContext(ColorContext);
@@ -7,9 +9,10 @@ export default function About() {
         <section className=" body-font w-full h-auto " id='about'>
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                    <img
+                    <LazyLoad
                         className="object-cover object-center rounded"
                         alt="hero"
+                        effect={'blur'}
                         src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     />
                 </div>

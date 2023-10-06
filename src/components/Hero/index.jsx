@@ -5,12 +5,10 @@ import { FaFacebookF } from "react-icons/fa"
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineTwitter } from "react-icons/ai"
 
 export default function Hero() {
- 
+
 
     return (
         <div className='w-full h-screen' id='home'>
-          
-
             <div className='w-full h-full flex flex-col justify-center items-center absolute gap-5'>
                 <h2 className='Text_hero text-white text-center'>Hi, I am Muhammad Farooq</h2>
                 <p className='text-gray-600 lg:max-w-[60%] md:max-w-[70%] sm:max-w-[80%] ParagraphyHero px-2  text-center'>
@@ -32,12 +30,12 @@ export default function Hero() {
                     <div className='p-3 border border-yellow-400 rounded-full cursor-pointer hover:bg-yellow-400 transition-colors'>
                         <AiOutlineGithub color='white' className='hover:text-yellow-500' />
                     </div>
-                    
+
 
                 </div>
             </div>
 
-                
+
         </div>
 
     )

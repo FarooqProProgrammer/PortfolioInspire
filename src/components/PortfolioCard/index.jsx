@@ -1,3 +1,5 @@
+import LazyLoad from "../../Common/LazyLoad";
+
 export const PortfolioCard = ({
     showCard,
     category,
@@ -17,7 +19,7 @@ export const PortfolioCard = ({
         >
           <div className="relative mb-12">
             <div className="overflow-hidden rounded-lg">
-              <img src={ImageHref} alt="portfolio" className="w-full" />
+              <LazyLoad effect={'blur'} src={ImageHref} alt="portfolio" className="w-full" />
             </div>
             <div className="relative z-10 px-3 -mt-20 text-center bg-white rounded-lg shadow-lg mx-7 py-9">
               <span className="block mb-2 text-sm font-semibold text-primary">
