@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
 import ListItem from '../ListItem';
+import Logo from "../../assets/logo.png"
 
 export default function Header() {
     const [open, setOpen] = useState(false);
     return (
         <header
-            className={`absolute top-0 left-0 z-20 flex items-center shadow-lg w-full bg-white px-5`}
+            className={`fixed top-0 left-0 z-20 flex items-center shadow-lg w-full bg-white px-5`}
         >
             <div className="container">
                 <div className="relative flex items-center justify-between -mx-4">
                     <div className="max-w-full px-4 w-60">
                         <a href="/#" className="block w-full py-5">
                             <img
-                                src="https://cdn.tailgrids.com/1.0/assets/images/logo/logo.svg"
+                                src={Logo}
                                 alt="logo"
                                 className="w-full"
                             />
@@ -28,9 +29,9 @@ export default function Header() {
                                 className={` ${open && "navbarTogglerActive"
                                     } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
                             >
-                                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
-                                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
-                                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+                                <span className="relative my-[6px] block h-[2px] w-[30px] bg-black"></span>
+                                <span className="relative my-[6px] block h-[2px] w-[30px] bg-black"></span>
+                                <span className="relative my-[6px] block h-[2px] w-[30px] bg-black"></span>
                             </button>
                             <nav
                                 // :className="!navbarOpen && 'hidden' "
@@ -41,27 +42,33 @@ export default function Header() {
                                 <ul className="block lg:flex">
                                     <ListItem
                                         navItemStyles="text-dark hover:text-primary"
-                                        NavLink="/#"
+                                        NavLink="#home"
                                     >
                                         Home
                                     </ListItem>
                                     <ListItem
                                         navItemStyles="text-dark hover:text-primary"
-                                        NavLink="/#"
-                                    >
-                                        Payment
-                                    </ListItem>
-                                    <ListItem
-                                        navItemStyles="text-dark hover:text-primary"
-                                        NavLink="/#"
+                                        NavLink="#about"
                                     >
                                         About
                                     </ListItem>
                                     <ListItem
                                         navItemStyles="text-dark hover:text-primary"
-                                        NavLink="/#"
+                                        NavLink="#services"
                                     >
-                                        Blog
+                                        Services
+                                    </ListItem>
+                                    <ListItem
+                                        navItemStyles="text-dark hover:text-primary"
+                                        NavLink="#portfolio"
+                                    >
+                                        Portfolio
+                                    </ListItem>
+                                    <ListItem
+                                        navItemStyles="text-dark hover:text-primary"
+                                        NavLink="#contact"
+                                    >
+                                        Contact
                                     </ListItem>
                                 </ul>
                             </nav>

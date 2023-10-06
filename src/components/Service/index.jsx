@@ -1,13 +1,11 @@
 import React from "react";
 import ServiceCard from "../ServiceCard";
-import { AiOutlineFormatPainter, AiOutlineHtml5, AiOutlineMobile } from "react-icons/ai";
-import { AiOutlineBarChart } from "react-icons/ai"
-import { BiSolidBusiness } from "react-icons/bi"
+
 import { Services } from "../../Data";
 
 const Service = () => {
     return (
-        <section className="pt-20 ">
+        <section className="pt-20 px-5">
             <div className="container">
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full px-4">

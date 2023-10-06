@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { ContactInputBox, ContactTextArea } from '../ContactAddOn'
 import { AiOutlineHome, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
+import { ColorContext } from '../../Hooks/useTheme';
 
 export default function Contact() {
+  const { colorValue } = useContext(ColorContext);
+
   return (
-    <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative px-10 z-10 lg:mx-0 md:mx-0 mx-5 ">
+    <section id='contact' className="bg-white py-20 lg:py-[120px] overflow-hidden relative px-10 z-10 lg:mx-0 md:mx-0 mx-5 ">
         <div className="container">
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="block mb-4 text-base text-yellow-500 font-semibold text-primary">
+                <span className={`block mb-4 text-base text-${colorValue} font-semibold text-primary`}>
                   Contact Us
                 </span>
                 <h2 className="mb-6 text-[32px] font-bold  uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">
@@ -22,7 +25,7 @@ export default function Contact() {
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <AiOutlineHome size={40} className='text-yellow-500'  />
+                    <AiOutlineHome size={40} className={` text-${colorValue}`}  />
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark">
@@ -35,7 +38,7 @@ export default function Contact() {
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <AiOutlinePhone size={40} className='text-yellow-500' />
+                    <AiOutlinePhone size={40} className={` text-${colorValue}`} />
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark">
@@ -48,7 +51,7 @@ export default function Contact() {
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <AiOutlineMail size={40} className='text-yellow-500' />
+                    <AiOutlineMail size={40} className={` text-${colorValue}`} />
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark">

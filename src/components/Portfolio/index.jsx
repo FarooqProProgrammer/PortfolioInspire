@@ -9,7 +9,7 @@ export default function Portfolio() {
         setShowCard(category);
     };
     return (
-        <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] px-5">
+        <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] px-5" id='portfolio'>
             <div className="container">
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full px-4">

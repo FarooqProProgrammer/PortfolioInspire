@@ -6,3 +6,47 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+/* Icon Moving Animation */
+.icon360 {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* ---------------- EXTRA STYLING ----------------------- */
+.Text_hero {
+  font-size: 50px;
+}
+.ParagraphyHero {
+  font-size: 20px;
+}
+/* ---------------- EXTRA STYLING ----------------------- */
+
+
+/* ------------------- RESPONSIVE STLYING ------------------- */
+@media (max-width:990px) {
+  .Text_hero {
+    font-size: 40px;
+  }
+  .ParagraphyHero {
+    font-size: 18px;
+  }
+}
+@media (max-width:690px) {
+  .Text_hero {
+    font-size: 30px;
+  }
+  .ParagraphyHero {
+    font-size: 16px;
+  }
+}
+
+/* ------------------- RESPONSIVE STLYING ------------------- */
