@@ -26,12 +26,12 @@ export const PortfolioCard = ({
                 {category}
               </span>
               <h3 className="mb-4 text-xl font-bold text-dark">{title}</h3>
-              <Link
-                to={buttonHref}
+              <a
+                href={buttonHref}
                 className="inline-block py-3 text-sm font-semibold transition border rounded-md px-7 text-body-color hover:border-primary hover:bg-primary hover:text-white"
               >
                 {button}
-              </Link>
+              </a>
             </div>
           </div>
         </div>

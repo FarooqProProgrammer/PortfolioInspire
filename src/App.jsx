@@ -1,18 +1,11 @@
 import React, { useCallback } from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
+
 import Particles from 'react-tsparticles'
 import { loadSlim } from 'tsparticles-slim'
-import Cta from './components/Cta'
-import Footer from './components/Footer'
-import Service from './components/Service'
-import Contact from './components/Contact'
-import Theme from './components/Theme'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Cv from './pages/Cv'
+
+
+import Blog from './components/Blog'
+import { About, Contact, Cta, Footer, Header, Hero, Portfolio, Service, Theme } from './components'
 
 export default function App() {
   const particlesInit = useCallback(async engine => {
@@ -101,13 +94,18 @@ export default function App() {
           detectRetina: true,
         }}
       />
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/cv' element={<Cv />} />
-          
-        </Routes>
-      </BrowserRouter>
+
+      <Header />
+      <Hero />
+      <About />
+      <Service />
+      <Portfolio />
+      <Blog />
+      <Contact />
+      <Cta />
+      <Footer />
+      <Theme />
+
     </div>
   )
 }

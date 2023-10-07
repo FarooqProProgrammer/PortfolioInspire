@@ -180,3 +180,30 @@ export const BlogData = [
     },
     
 ]
+
+export const NavData = [
+    {
+        id:'#home',
+        text:'home',
+    },
+    {
+        id:'#about',
+        text:'About',
+    },
+    {
+        id:'#blog',
+        text:'Blog',
+    },
+    {
+        id:'#services',
+        text:'Services',
+    },
+    {
+        id:'#portfolio',
+        text:'Portfolio',
+    },
+    {
+        id:'#contact',
+        text:'Contact',
+    },
+]

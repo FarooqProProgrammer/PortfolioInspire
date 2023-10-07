@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { ColorContext } from "../../Hooks/useTheme";
 import { Animated } from "react-animated-css";
-import { Link } from "react-router-dom";
 
 const Cta = () => {
     const { colorValue } = useContext(ColorContext);
@@ -26,13 +25,13 @@ const Cta = () => {
                             <div className="w-full px-4 lg:w-1/2">
                                 <div className="flex flex-wrap space-x-4 lg:justify-end">
                                   
-                                    <Link
-                                        to=""
+                                    <a
+                                        href="/#"
                                         style={{backgroundColor:colorValue}}
                                         className={`my-1 cursor-pointer inline-block rounded py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9`}
                                     >
                                         Hire Me
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

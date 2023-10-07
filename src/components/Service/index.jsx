@@ -9,9 +9,9 @@ const Service = () => {
     const { colorValue } = useContext(ColorContext);
 
     return (
-        <Animated  id="services" animationIn="bounceInRight" animationOut="fadeInRight" isVisible={true}>
+        <Animated   animationIn="bounceInRight" animationOut="fadeInRight" isVisible={true}>
 
-            <section className="pt-20 px-5" >
+            <section className="pt-20 px-5" id="services" >
                 <div className="container">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full px-4">
@@ -47,6 +47,7 @@ const Service = () => {
                     </div>
                 </div>
             </section>
+
         </Animated>
     );
 };

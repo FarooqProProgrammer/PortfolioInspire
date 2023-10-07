@@ -12,8 +12,8 @@ import Image6 from "../../assets/images/portfolio/6.webp";
 import Image7 from "../../assets/images/portfolio/7.webp";
 import Image8 from "../../assets/images/portfolio/8.webp";
 import { AiOutlineCamera } from "react-icons/ai";
+import { Icon } from "@chakra-ui/icons";
 import { ColorContext } from "../../Hooks/useTheme";
-
 
 
 const images = [
@@ -89,7 +89,7 @@ export default function Portfolio() {
                         <span style={{ color: colorValue }} className="block  mb-2 text-lg font-semibold text-primary">
                             Portfolio
                         </span>
-                        <span className="block text-black mb-2 text-4xl font-semibold text-primary">
+                        <span className="block text-black mb-2 text-5xl font-semibold text-primary">
                             Our Projects
                         </span>
                         <p className="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
@@ -103,12 +103,12 @@ export default function Portfolio() {
 
                                 <div className="content">
                                     <div className="icon absolute z-10 opacity-0 group-hover:opacity-100 top-4 end-4 transition-all duration-500">
-                                        <Link to="#" onClick={() => handleCLick(index)} className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white btn-icon rounded-full lightbox">
+                                        <a href="#" onClick={() => handleCLick(index)} className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white btn-icon rounded-full lightbox">
                                             <AiOutlineCamera size={30} color={colorValue} />
-                                        </Link>
+                                        </a>
                                     </div>
                                     <div className="absolute z-10 opacity-0 group-hover:opacity-100 bottom-4 start-4 transition-all duration-500">
-                                        <Link to="#" className="h6 text-md font-medium text-white hover:text-orange-600 transition duration-500">{item.title}</Link>
+                                        <a href="#" className="h6 text-md font-medium text-white hover:text-orange-600 transition duration-500">{item.title}</a>
                                         <p className="text-slate-100 tag mb-0">{item.subtext}</p>
                                     </div>
                                 </div>

@@ -23,7 +23,7 @@ export default function Blog() {
 
             </Flex>
             <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-                <section className=" body-font my-[60px]">
+                <section className=" body-font my-[60px]" id='blog'>
                 <div className="container px-5  mx-auto">
                     <div className="flex flex-wrap -m-4">
                         {

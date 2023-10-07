@@ -52,9 +52,9 @@ export default function About() {
 
                         </div>
                         <div className="flex justify-center">
-                            <Link to={'https://drive.google.com/file/d/1FN4gm6CIxfyER48OPL63SrI60nsJBHFj/view?usp=drive_link'} target='_blank'  style={{ backgroundColor: colorValue }} className={`inline-flex  text-white  border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg`}>
+                            <a href={'https://drive.google.com/file/d/1FN4gm6CIxfyER48OPL63SrI60nsJBHFj/view?usp=drive_link'} target='_blank'  style={{ backgroundColor: colorValue }} className={`inline-flex  text-white  border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg`}>
                                 Download Cv
-                            </Link>
+                            </a>
 
                         </div>
                     </div>

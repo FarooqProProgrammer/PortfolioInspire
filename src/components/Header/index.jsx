@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ListItem from '../ListItem';
 import Logo from "../../assets/logo.png"
-import { Link } from 'react-router-dom';
+import { NavData } from '../../Data';
 
 export default function Header() {
     const [open, setOpen] = useState(false);
@@ -12,13 +12,13 @@ export default function Header() {
             <div className="container">
                 <div className="relative flex items-center justify-between -mx-4">
                     <div className="max-w-full px-4 w-60">
-                        <Link to="/#" className="block w-full py-5">
+                        <a href="/#" className="block w-full py-5">
                             <img
                                 src={Logo}
                                 alt="logo"
                                 className="w-full"
                             />
-                        </Link>
+                        </a>
                     </div>
                     <div className="flex items-center justify-between w-full px-4">
                         <div>
@@ -41,46 +41,25 @@ export default function Header() {
                                     } `}
                             >
                                 <ul className="block lg:flex">
-                                    <ListItem
-                                        navItemStyles="text-dark hover:text-primary"
-                                        NavLink="#home"
-                                    >
-                                        Home
-                                    </ListItem>
-                                    <ListItem
-                                        navItemStyles="text-dark hover:text-primary"
-                                        NavLink="#about"
-                                    >
-                                        About
-                                    </ListItem>
-                                    <ListItem
-                                        navItemStyles="text-dark hover:text-primary"
-                                        NavLink="#blog"
-                                    >
-                                        Blog
-                                    </ListItem>
-                                    <ListItem
-                                        navItemStyles="text-dark hover:text-primary"
-                                        NavLink="#services"
-                                    >
-                                        Services
-                                    </ListItem>
-                                    <ListItem
-                                        navItemStyles="text-dark hover:text-primary"
-                                        NavLink="#portfolio"
-                                    >
-                                        Portfolio
-                                    </ListItem>
-                                    <ListItem
-                                        navItemStyles="text-dark hover:text-primary"
-                                        NavLink="#contact"
-                                    >
-                                        Contact
-                                    </ListItem>
+                                    {
+                                        NavData?.map((item) => {
+                                            return (
+                                                <ListItem
+                                                    navItemStyles="text-dark hover:text-primary"
+                                                    NavLink={item.id}
+                                                >
+                                                    {item.text}
+                                                </ListItem>
+                                            )
+                                        })
+
+                                    }
+
+
                                 </ul>
                             </nav>
                         </div>
-                      
+
                     </div>
                 </div>
             </div>

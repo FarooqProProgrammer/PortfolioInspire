@@ -2,7 +2,6 @@ import React from 'react'
 import Logo from "../../assets/logo.png"
 import { Icon, IconButton, Image } from '@chakra-ui/react'
 import { AiFillLinkedin, AiFillTwitterSquare, AiOutlineFacebook, AiOutlineInstagram } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -14,30 +13,30 @@ export default function Footer() {
                 />
 
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                    <Link className="text-gray-500">
+                    <a className="text-gray-500">
                         <IconButton>
                             <Icon as={AiOutlineFacebook} fontSize={25} color={'#000'} />
                         </IconButton>
 
-                    </Link>
-                    <Link className="ml-3 text-gray-500">
+                    </a>
+                    <a className="ml-3 text-gray-500">
                         <IconButton>
                             <Icon as={AiFillTwitterSquare} fontSize={25} color={'#000'} />
                         </IconButton>
-                    </Link>
-                    <Link className="ml-3 text-gray-500">
+                    </a>
+                    <a className="ml-3 text-gray-500">
                     <IconButton>
                         <Icon as={AiOutlineInstagram} fontSize={25} color={'#000'} />
                     </IconButton>
                         
 
-                    </Link>
-                    <Link className="ml-3 text-gray-500">
+                    </a>
+                    <a className="ml-3 text-gray-500">
                     <IconButton>
                         <Icon as={AiFillLinkedin} fontSize={25} color={'#000'} />
                     </IconButton>
                         
-                    </Link>
+                    </a>
                 </span>
             </div>
         </footer>
