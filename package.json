@@ -40,6 +40,7 @@
     "@testing-library/user-event": "^14.5.1",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
+    "react-18-image-lightbox": "^5.1.4",
     "react-animated-css": "^1.2.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",

@@ -24,6 +24,8 @@ export default function Theme() {
                 <BiSolidDroplet onClick={() => ChangeColor('#8A2CE2')} className='text-purple-500 cursor-pointer' size={50} />
                 <BiSolidDroplet onClick={() => ChangeColor('#0EA5E9')} className='text-cyan-700 cursor-pointer' cursor-pointer size={50} />
                 <BiSolidDroplet onClick={() => ChangeColor('#F97316')} className='text-orange-500 cursor-pointer' size={50} />
+                <BiSolidDroplet onClick={() => ChangeColor('#000')} className='text-black cursor-pointer' size={50} />
+                
             </div>
 
 

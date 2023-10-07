@@ -14,8 +14,8 @@ export default function ServiceCard({ icon, title, details }) {
 
                     <Icon as={icon} fontSize={50} color={colorValue} />
                 </div>
-                <h4 style={{color:colorValue}}  className="mb-3 text-xl font-semibold text-dark ">{title}</h4>
-                <p  style={{color:colorValue}} className="text-body-color  ">{details}</p>
+                <h4   className="mb-3 text-xl font-semibold text-dark ">{title}</h4>
+                <p   className="text-body-color  ">{details}</p>
             </div>
         </div>
     )
