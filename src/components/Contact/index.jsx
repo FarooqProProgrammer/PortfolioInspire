@@ -12,7 +12,7 @@ export default function Contact() {
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className={`block mb-4 text-base text-${colorValue} font-semibold text-primary`}>
+                <span style={{color:colorValue}} className={`block mb-4 text-base  font-semibold text-primary`}>
                   Contact Us
                 </span>
                 <h2 className="mb-6 text-[32px] font-bold  uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">
@@ -25,7 +25,7 @@ export default function Contact() {
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <AiOutlineHome size={40} className={` text-${colorValue}`}  />
+                    <AiOutlineHome size={40} style={{color:colorValue}}   />
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark">
@@ -38,7 +38,7 @@ export default function Contact() {
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <AiOutlinePhone size={40} className={` text-${colorValue}`} />
+                    <AiOutlinePhone size={40} style={{color:colorValue}}  />
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark">
@@ -51,7 +51,7 @@ export default function Contact() {
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <AiOutlineMail size={40} className={` text-${colorValue}`} />
+                    <AiOutlineMail size={40} style={{color:colorValue}}  />
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark">
@@ -91,7 +91,8 @@ export default function Contact() {
                   <div>
                     <button
                       type="submit"
-                      className="w-full p-3 text-yellow-500 transition border rounded border-primary bg-primary hover:bg-opacity-90"
+                      style={{color:colorValue}} 
+                      className="w-full p-3  transition border rounded border-primary bg-primary hover:bg-opacity-90"
                     >
                       Send Message
                     </button>

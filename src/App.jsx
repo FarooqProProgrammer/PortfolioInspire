@@ -10,6 +10,9 @@ import Footer from './components/Footer'
 import Service from './components/Service'
 import Contact from './components/Contact'
 import Theme from './components/Theme'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Cv from './pages/Cv'
 
 export default function App() {
   const particlesInit = useCallback(async engine => {
@@ -98,15 +101,13 @@ export default function App() {
           detectRetina: true,
         }}
       />
-      <Header />
-      <Hero />
-      <About />
-      <Service />
-      <Portfolio />
-      <Contact />
-      <Cta />
-      <Footer />
-      <Theme />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/cv' element={<Cv />} />
+          
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

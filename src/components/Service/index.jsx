@@ -2,10 +2,13 @@ import React from "react";
 import ServiceCard from "../ServiceCard";
 
 import { Services } from "../../Data";
+import { Animated } from "react-animated-css";
 
 const Service = () => {
     
     return (
+        <Animated animationIn="bounceInRight" animationOut="fadeInRight" isVisible={true}>
+
         <section className="pt-20 px-5">
             <div className="container">
                 <div className="flex flex-wrap -mx-4">
@@ -42,6 +45,7 @@ const Service = () => {
                 </div>
             </div>
         </section>
+        </Animated>
     );
 };
 

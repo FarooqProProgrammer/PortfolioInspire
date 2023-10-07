@@ -24,7 +24,7 @@ const Cta = () => {
                                         href="/#"
                                         className={`my-1 cursor-pointer inline-block rounded bg-yellow-500 py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9`}
                                     >
-                                        Start Free Trial
+                                        Hire Me
                                     </a>
                                 </div>
                             </div>
