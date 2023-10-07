@@ -8,6 +8,7 @@ import Service from '../../components/Service'
 import About from '../../components/About'
 import Hero from '../../components/Hero'
 import Header from '../../components/Header'
+import Blog from '../../components/Blog'
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <About />
             <Service />
             <Portfolio />
+            <Blog />
             <Contact />
             <Cta />
             <Footer />
