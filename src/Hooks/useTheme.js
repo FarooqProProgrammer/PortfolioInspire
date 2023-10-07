@@ -1,11 +1,11 @@
-import React, { createContext, useState } from 'react'
+import  { createContext, useState } from 'react'
 
 export const ColorContext = createContext();
 
 
 
 export const  ColorProvider =({ children }) => {
-    const [colorValue, setColorValue] = useState('yellow-500');
+    const [colorValue, setColorValue] = useState('#EAB308');
 
     const ChangeColor = (item) => {
         setColorValue(item)

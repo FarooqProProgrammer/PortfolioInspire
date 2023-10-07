@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
-import  { ColorContext } from '../../Hooks/useTheme'
+import { ColorContext } from '../../Hooks/useTheme'
 import LazyLoad from '../../Common/LazyLoad';
 
 
 export default function About() {
     const { colorValue } = useContext(ColorContext);
+    
     return (
         <section className=" body-font w-full h-auto " id='about'>
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -17,7 +18,7 @@ export default function About() {
                     />
                 </div>
                 <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <p className={`text-${colorValue} font-bold`}>Who am I ?</p>
+                    <p style={{ color: colorValue }} className={` font-bold`}>Who am I ?</p>
                     <h1 className="lg:text-4xl md:text-4xl sm:text-3xl mb-4 font-medium text-white">
                         Hi, I am Muhammad Farooq
 
@@ -47,7 +48,7 @@ export default function About() {
 
                     </div>
                     <div className="flex justify-center">
-                        <button className={`inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg`}>
+                        <button style={{ color: colorValue === '#EAB308' ? '' : colorValue }} className={`inline-flex  bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg`}>
                             Download Cv
                         </button>
 

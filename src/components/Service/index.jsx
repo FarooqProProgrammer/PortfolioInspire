@@ -4,6 +4,7 @@ import ServiceCard from "../ServiceCard";
 import { Services } from "../../Data";
 
 const Service = () => {
+    
     return (
         <section className="pt-20 px-5">
             <div className="container">

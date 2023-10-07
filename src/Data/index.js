@@ -53,31 +53,31 @@ export const PortfolioData = [
 export const Services = [
     {
         id:generateRandomId(10),
-        icon:<AiOutlineMobile className="text-yellow-600" size={50} />,
+        icon:AiOutlineMobile ,
         title:'Mobile App Development',
         desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, molestie taciti ad tempor egestas cursus.',
     },
     {
         id:generateRandomId(10),
-        icon:<AiOutlineHtml5 className="text-yellow-600" size={50} />,
+        icon:AiOutlineHtml5 ,
         title:'Website Development',
         desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, molestie taciti ad tempor egestas cursus.',
     },
     {
         id:generateRandomId(10),
-        icon: <AiOutlineFormatPainter className="text-yellow-600" size={50} />,
+        icon: AiOutlineFormatPainter ,
         title:'Figma to front end conversion',
         desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, molestie taciti ad tempor egestas cursus.',
     },
     {
         id:generateRandomId(10),
-        icon: <AiOutlineBarChart className="text-yellow-600" size={50} />,
+        icon: AiOutlineBarChart ,
         title:'SEO',
         desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, molestie taciti ad tempor egestas cursus.',
     },
     {
         id:generateRandomId(10),
-        icon: <BiSolidBusiness className="text-yellow-600" size={50} />,
+        icon: BiSolidBusiness ,
         title:'Business Solution',
         desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, molestie taciti ad tempor egestas cursus.',
     },
