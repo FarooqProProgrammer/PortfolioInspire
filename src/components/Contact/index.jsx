@@ -2,23 +2,25 @@ import React, { useContext } from 'react'
 import { ContactInputBox, ContactTextArea } from '../ContactAddOn'
 import { AiOutlineHome, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { ColorContext } from '../../Hooks/useTheme';
+import { Animated } from 'react-animated-css';
 
 export default function Contact() {
   const { colorValue } = useContext(ColorContext);
 
   return (
-    <section id='contact' className="bg-white py-20 lg:py-[120px] overflow-hidden relative px-10 z-10 lg:mx-0 md:mx-0 mx-5 ">
+    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+     <section id='contact' className="bg-white rounded-md py-20 lg:py-[120px] overflow-hidden relative px-5 z-10 lg:mx-0 md:mx-0 mx-5 ">
         <div className="container">
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span style={{color:colorValue}} className={`block mb-4 text-base  font-semibold text-primary`}>
+                <span style={{color:colorValue}} className={`block px-2 mb-4 text-base  font-semibold text-primary`}>
                   Contact Us
                 </span>
-                <h2 className="mb-6 text-[32px] font-bold  uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="mb-6 text-[32px] font-bold px-2  uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="text-base leading-relaxed mb-9 text-body-color">
+                <p className="text-base leading-relaxed mb-9 text-body-color px-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eius tempor incididunt ut labore e dolore magna aliqua. Ut
                   enim adiqua minim veniam quis nostrud exercitation ullamco
@@ -104,5 +106,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+    </Animated>
+   
   )
 }

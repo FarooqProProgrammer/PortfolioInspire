@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ColorContext } from "../../Hooks/useTheme";
+import { Animated } from "react-animated-css";
+import { Link } from "react-router-dom";
 
 const Cta = () => {
+    const { colorValue } = useContext(ColorContext);
+
     return (
         <>
-            <section className="py-20 lg:py-[120px] ">
+        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+             <section className="py-20 lg:py-[120px] ">
                 <div className="container">
                     <div
                         className={`relative z-10 overflow-hidden rounded bg-primary py-12 px-8 md:p-[70px]`}
@@ -20,12 +26,13 @@ const Cta = () => {
                             <div className="w-full px-4 lg:w-1/2">
                                 <div className="flex flex-wrap space-x-4 lg:justify-end">
                                   
-                                    <a
-                                        href="/#"
-                                        className={`my-1 cursor-pointer inline-block rounded bg-yellow-500 py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9`}
+                                    <Link
+                                        to=""
+                                        style={{backgroundColor:colorValue}}
+                                        className={`my-1 cursor-pointer inline-block rounded py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9`}
                                     >
                                         Hire Me
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -95,6 +102,8 @@ const Cta = () => {
                     </div>
                 </div>
             </section>
+        </Animated>
+           
         </>
     );
 };

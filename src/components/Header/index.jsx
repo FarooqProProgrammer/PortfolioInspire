@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ListItem from '../ListItem';
 import Logo from "../../assets/logo.png"
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     const [open, setOpen] = useState(false);
@@ -11,13 +12,13 @@ export default function Header() {
             <div className="container">
                 <div className="relative flex items-center justify-between -mx-4">
                     <div className="max-w-full px-4 w-60">
-                        <a href="/#" className="block w-full py-5">
+                        <Link to="/#" className="block w-full py-5">
                             <img
                                 src={Logo}
                                 alt="logo"
                                 className="w-full"
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div className="flex items-center justify-between w-full px-4">
                         <div>
@@ -51,6 +52,12 @@ export default function Header() {
                                         NavLink="#about"
                                     >
                                         About
+                                    </ListItem>
+                                    <ListItem
+                                        navItemStyles="text-dark hover:text-primary"
+                                        NavLink="#blog"
+                                    >
+                                        Blog
                                     </ListItem>
                                     <ListItem
                                         navItemStyles="text-dark hover:text-primary"

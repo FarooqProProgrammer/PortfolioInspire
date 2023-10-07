@@ -2,12 +2,11 @@ import React, { useContext } from 'react'
 import { ColorContext } from '../../Hooks/useTheme'
 import LazyLoad from '../../Common/LazyLoad';
 import { Animated } from "react-animated-css";
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function About() {
     const { colorValue } = useContext(ColorContext);
-    const navigate = useNavigate();
 
     return (
         <Animated animationIn="swing" animationOut="fadeOut" isVisible={true}>
@@ -53,9 +52,9 @@ export default function About() {
 
                         </div>
                         <div className="flex justify-center">
-                            <button onClick={()=>navigate('/cv')}  style={{ color: colorValue === '#EAB308' ? '' : colorValue }} className={`inline-flex  bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg`}>
+                            <Link to={'https://drive.google.com/file/d/1FN4gm6CIxfyER48OPL63SrI60nsJBHFj/view?usp=drive_link'} target='_blank'  style={{ backgroundColor: colorValue }} className={`inline-flex  text-white  border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg`}>
                                 Download Cv
-                            </button>
+                            </Link>
 
                         </div>
                     </div>
