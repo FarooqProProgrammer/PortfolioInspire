@@ -2,12 +2,13 @@ import React, { useContext } from 'react'
 import { ColorContext } from '../../Hooks/useTheme'
 import LazyLoad from '../../Common/LazyLoad';
 import { Animated } from "react-animated-css";
-import { Link } from 'react-router-dom';
 
 
 export default function About() {
     const { colorValue } = useContext(ColorContext);
 
+
+    
     return (
         <Animated animationIn="swing" animationOut="fadeOut" isVisible={true}>
 
@@ -52,7 +53,7 @@ export default function About() {
 
                         </div>
                         <div className="flex justify-center">
-                            <a href={'https://drive.google.com/file/d/1FN4gm6CIxfyER48OPL63SrI60nsJBHFj/view?usp=drive_link'} target='_blank'  style={{ backgroundColor: colorValue }} className={`inline-flex  text-white  border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg`}>
+                            <a onClick={(e) => {window.open("https://drive.google.com/file/d/1FN4gm6CIxfyER48OPL63SrI60nsJBHFj/view?usp=drive_link", "_blank");}}  target='_blank'  style={{ backgroundColor: colorValue }} className={`inline-flex  text-white cursor-pointer  border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg`} rel="noreferrer">
                                 Download Cv
                             </a>
 

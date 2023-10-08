@@ -1,18 +1,7 @@
 import React, { useContext, useState } from "react";
 import Lightbox from 'react-18-image-lightbox';
 import 'react-18-image-lightbox/style.css';
-import { Link } from 'react-router-dom';
-
-import Image1 from "../../assets/images/portfolio/1.webp";
-import Image2 from "../../assets/images/portfolio/2.webp";
-import Image3 from "../../assets/images/portfolio/3.webp";
-import Image4 from "../../assets/images/portfolio/4.webp";
-import Image5 from "../../assets/images/portfolio/5.webp";
-import Image6 from "../../assets/images/portfolio/6.webp";
-import Image7 from "../../assets/images/portfolio/7.webp";
-import Image8 from "../../assets/images/portfolio/8.webp";
 import { AiOutlineCamera } from "react-icons/ai";
-import { Icon } from "@chakra-ui/icons";
 import { ColorContext } from "../../Hooks/useTheme";
 import { projectList } from "../../Data";
 
