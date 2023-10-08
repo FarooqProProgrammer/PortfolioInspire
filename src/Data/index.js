@@ -149,44 +149,44 @@ export   const projectList = [
 export const BlogData = [
     {
         id:generateRandomId(10),
-        category:'category',
-        title:'The Catalyzer',
-        description:'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+        category:'Alex Johnson',
+        title:'The Future of Artificial Intelligence',
+        description:'Artificial Intelligence (AI) is rapidly advancing and changing the way we live and work. In this blog post, we explore the latest developments in AI, including machine learning, neural networks, and natural language processing. Discover how AI is transforming industries and what the future holds for this exciting technology.',
         img:'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     },
     {
         id:generateRandomId(10),
-        category:'category',
-        title:'The Catalyzer',
-        description:'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+        category:'Sarah Williams',
+        title:'The Rise of 5G Technology',
+        description:'5G technology is revolutionizing our connectivity. This blog post dives into the world of 5G, discussing its faster speeds, lower latency, and its impact on IoT, augmented reality, and more. Learn about the potential benefits and challenges of widespread 5G adoption.',
         img:'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     },
     {
         id:generateRandomId(10),
-        category:'category',
-        title:'The Catalyzer',
-        description:'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+        category:'Michael Brown',
+        title:'Blockchain: Beyond Cryptocurrency',
+        description:'Blockchain technology has evolved beyond cryptocurrency. Explore the various use cases of blockchain, including supply chain management, healthcare, and voting systems. Learn how blockchain is enhancing security, transparency, and trust in various industries.',
         img:'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     },
     {
         id:generateRandomId(10),
-        category:'category',
-        title:'The Catalyzer',
-        description:'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+        category:'Emily Davis',
+        title:'The Power of Quantum Computing',
+        description:'Quantum computing is on the horizon, promising unprecedented computational power. In this blog post, we delve into the principles of quantum computing, its potential applications in cryptography, optimization, and drug discovery, and the challenges it presents.',
         img:'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     },
     {
         id:generateRandomId(10),
-        category:'category',
-        title:'The Catalyzer',
-        description:'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+        category:'David Miller',
+        title:'Augmented Reality in Everyday Life',
+        description:'Augmented Reality (AR) is no longer limited to gaming. Discover how AR is infiltrating our daily lives, from shopping and navigation to education and healthcare. This post explores the technology behind AR and its transformative potential.',
         img:'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     },
     {
         id:generateRandomId(10),
-        category:'category',
-        title:'The Catalyzer',
-        description:'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+        category:'Lisa Chang',
+        title:'The Internet of Things (IoT) Revolution',
+        description:'IoT is connecting devices and changing the way we interact with our surroundings. This blog post explores the growth of IoT, its applications in smart homes, cities, and industries, and the challenges of managing massive networks of interconnected devices.',
         img:'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     },
     
@@ -206,6 +206,10 @@ export const NavData = [
         text:'Blog',
     },
     {
+        id:"#personel",
+        text:'Personal Information'
+    },
+    {
         id:'#services',
         text:'Services',
     },
@@ -217,4 +221,24 @@ export const NavData = [
         id:'#contact',
         text:'Contact',
     },
+]
+
+
+export const EducationData = [
+    {
+        id:generateRandomId(10),
+        Name:'Degree 01',
+        Duration:'01/01/23 to 01/12/23',
+        Desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit dis eros, lobortis hendrerit torquent pellentesque pulvinar interdum porttitor."
+
+    }
+]
+
+export const ServiceData = [
+    {
+        id:generateRandomId(10),
+        Name:'Job 01',
+        Desc:'Lorem ipsum dolor sit amet consectetur adipiscing, elit aenean dui ullamcorper feugiat, pulvinar blandit pharetra integer malesuada.',
+        Duration:'01/01/2023 to 10/6/2023'
+    }
 ]

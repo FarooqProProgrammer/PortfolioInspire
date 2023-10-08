@@ -8,6 +8,7 @@ import { About, Contact, Cta, Footer, Header, Hero, Portfolio, Service, Theme } 
 import { ColorContext } from './Hooks/useTheme'
 import useRgb from './Hooks/useRgb'
 import Education from './components/Education'
+import Skills from './components/Skills'
 
 export default function App() {
   const particlesInit = useCallback(async engine => {
@@ -106,6 +107,7 @@ export default function App() {
       <Hero />
       <About />
       <Education />
+      <Skills />
       <Service />
       <Portfolio />
       <Blog />

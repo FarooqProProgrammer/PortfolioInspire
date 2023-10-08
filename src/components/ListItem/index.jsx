@@ -13,7 +13,7 @@ export default function ListItem({ children, navItemStyles, NavLink }) {
 
   return (
     <>
-      <li>
+      <li className='capitalize'>
         <a
           href={NavLink}
       
