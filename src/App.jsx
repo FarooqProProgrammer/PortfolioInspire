@@ -7,6 +7,7 @@ import Blog from './components/Blog'
 import { About, Contact, Cta, Footer, Header, Hero, Portfolio, Service, Theme } from './components'
 import { ColorContext } from './Hooks/useTheme'
 import useRgb from './Hooks/useRgb'
+import Education from './components/Education'
 
 export default function App() {
   const particlesInit = useCallback(async engine => {
@@ -104,6 +105,7 @@ export default function App() {
       <Header />
       <Hero />
       <About />
+      <Education />
       <Service />
       <Portfolio />
       <Blog />
@@ -113,7 +115,7 @@ export default function App() {
       <Theme />
       <AnimatedCursor
 
-        color={`${r},${g},${b}`}
+        color={`${255},${255},${0}`}
       />
     </div>
   )
