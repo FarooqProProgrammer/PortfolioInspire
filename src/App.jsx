@@ -1,11 +1,12 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect, useContext } from 'react'
 
 import Particles from 'react-tsparticles'
 import { loadSlim } from 'tsparticles-slim'
-
-
+import AnimatedCursor from "react-animated-cursor"
 import Blog from './components/Blog'
 import { About, Contact, Cta, Footer, Header, Hero, Portfolio, Service, Theme } from './components'
+import { ColorContext } from './Hooks/useTheme'
+import useRgb from './Hooks/useRgb'
 
 export default function App() {
   const particlesInit = useCallback(async engine => {
@@ -16,6 +17,11 @@ export default function App() {
   const particlesLoaded = useCallback(async container => {
     await console.log(container);
   }, []);
+
+  const { colorValue } = useContext(ColorContext)
+  const { r, g, b } = useRgb(colorValue);
+
+ 
 
   return (
     <div className='w-full h-screen'>
@@ -105,7 +111,10 @@ export default function App() {
       <Cta />
       <Footer />
       <Theme />
+      <AnimatedCursor
 
+        color={`${r},${g},${b}`}
+      />
     </div>
   )
 }

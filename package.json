@@ -43,6 +43,7 @@
     "react": "^18.2.0",
     "react-18-image-lightbox": "^5.1.4",
     "react-animated-css": "^1.2.1",
+    "react-animated-cursor": "^2.10.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-lazy-load-image-component": "^1.6.0",
