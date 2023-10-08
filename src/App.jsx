@@ -107,7 +107,7 @@ export default function App() {
       <Hero />
       <About />
       <Education />
-
+        <Skills />
       <Service />
       <Portfolio />
       <Blog />
