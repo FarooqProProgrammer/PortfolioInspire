@@ -14,22 +14,21 @@ import Image8 from "../../assets/images/portfolio/8.webp";
 import { AiOutlineCamera } from "react-icons/ai";
 import { Icon } from "@chakra-ui/icons";
 import { ColorContext } from "../../Hooks/useTheme";
+import { projectList } from "../../Data";
 
 
 const images = [
-    Image1,
-    Image2,
-    Image3,
-    Image4,
-    Image5,
-    Image6,
-    Image7,
-    Image8
+    projectList[0].image,
+    projectList[1].image,
+    projectList[2].image,
+    projectList[3].image,
+    projectList[4].image,
+    projectList[5].image,
+    projectList[6].image,
+    projectList[7].image
 ];
 
-/**
- * Portfolio section
- */
+
 export default function Portfolio() {
 
     const [photoIndex, setActiveIndex] = useState(0);
@@ -41,45 +40,7 @@ export default function Portfolio() {
         setOpen(true);
     }
 
-    const projectList = [
-        {
-
-            image: Image1,
-            title: 'Mockup Collection',
-            subtext: 'Branding'
-        },
-        {
-            image: Image2,
-            title: 'Mockup Collection',
-            subtext: 'Designing'
-        }, {
-            image: Image3,
-            title: 'Abstract images',
-            subtext: 'Abstract'
-        }, {
-            image: Image4,
-            title: 'Yellow bg with Books',
-            subtext: 'Books'
-        }, {
-            image: Image5,
-            title: 'Company V-card',
-            subtext: 'V-card'
-        }, {
-            image: Image6,
-            title: 'Mockup box with paints',
-            subtext: 'Photography'
-        },
-        {
-            image: Image7,
-            title: 'Coffee cup',
-            subtext: 'Cups'
-        },
-        {
-            image: Image8,
-            title: 'Pen and article',
-            subtext: 'Article'
-        }
-    ]
+    
     return (
         <>
 

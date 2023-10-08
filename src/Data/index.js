@@ -107,34 +107,45 @@ export const HeroIcons = [
     },
 ]
 
-export const portfolioData = [
-  {
-    id: 1,
-    category: "Web Development",
-    title: "Project 1",
-    image: "https://images.unsplash.com/photo-1545665277-5937489579f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-  },
-  {
-    id: 2,
-    category: "Design",
-    title: "Project 2",
-    image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-  },
-  {
-    id: 3,
-    category: "Design",
-    title: "Project 2",
-    image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-  },
-  {
-    id: 4,
-    category: "Design",
-    title: "Project 2",
-    image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-  },
- 
-];
+export   const projectList = [
+    {
 
+        image: '../../images/portfolio/1.webp',
+        title: 'Mockup Collection',
+        subtext: 'Branding'
+    },
+    {
+        image: '../../images/portfolio/2.webp',
+        title: 'Mockup Collection',
+        subtext: 'Designing'
+    }, {
+        image: '../../images/portfolio/3.webp',
+        title: 'Abstract images',
+        subtext: 'Abstract'
+    }, {
+        image: '../../images/portfolio/4.webp',
+        title: 'Yellow bg with Books',
+        subtext: 'Books'
+    }, {
+        image: '../../images/portfolio/5.webp',
+        title: 'Company V-card',
+        subtext: 'V-card'
+    }, {
+        image: '../../images/portfolio/6.webp',
+        title: 'Mockup box with paints',
+        subtext: 'Photography'
+    },
+    {
+        image: '../../images/portfolio/7.webp',
+        title: 'Coffee cup',
+        subtext: 'Cups'
+    },
+    {
+        image: '../../images/portfolio/8.webp',
+        title: 'Pen and article',
+        subtext: 'Article'
+    }
+]
 export const BlogData = [
     {
         id:generateRandomId(10),
