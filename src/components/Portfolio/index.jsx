@@ -33,7 +33,7 @@ export default function Portfolio() {
     return (
         <>
 
-            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 active" id="portfolio">
+            <section className="relative md:py-24 py-16 bg-gray-color dark:bg-slate-800 active" id="portfolio">
                 <div className="container">
                     <div className="grid grid-cols-1 pb-8 text-center">
                         <span style={{ color: colorValue }} className="block  mb-2 text-lg font-semibold text-primary">

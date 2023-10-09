@@ -20,8 +20,7 @@ export default function App() {
     await console.log(container);
   }, []);
 
-  const { colorValue } = useContext(ColorContext)
-  const { r, g, b } = useRgb(colorValue);
+
 
  
 
