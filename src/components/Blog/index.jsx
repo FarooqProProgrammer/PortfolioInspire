@@ -46,7 +46,9 @@ export default function Blog() {
                                                 <Text noOfLines={3} className="leading-relaxed mb-3">
                                                     {item.description}
                                                 </Text>
-
+                                                <h2 style={{ color: colorValue }} className="tracking-widest text-md title-font font-medium  mb-1">
+                                                    Learn More
+                                                </h2>
                                             </div>
                                         </div>
                                     </div>
